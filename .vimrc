@@ -14,6 +14,9 @@ Plug 'acwars/winmanager'
 Plug 'acwars/vim_snipmate'
 Plug 'acwars/woohoo'
 Plug 'acwars/vim_markdown_toc'
+Plug 'acwars/vim_completes'
+Plug 'acwars/vim_dictionary'
+Plug 'acwars/vim_auto_save'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/taglist.vim'
 Plug 'kien/ctrlp.vim'
@@ -440,3 +443,28 @@ nnoremap <silent> <leader>gd :Gdiff<CR><C-w>
 nnoremap <silent> <leader>gc :Gcommit<CR><C-w>
 nnoremap <silent> <leader>gw :Gwrite<CR><C-w>
 nnoremap <silent> <leader>gp :Gpush<CR><C-w>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim_completes
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" enable this plugin for filetypes, '*' for all files.
+let g:vim_completes_enable_ft = {'*':1}
+
+" source for dictionary, current or other loaded buffers, see ':help cpt'
+set cpt=.,k,w,b
+
+" don't select the first item.
+set completeopt=menu,menuone,noselect
+
+" suppress annoy messages.
+set shortmess+=c
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim_dictionary
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim_auto_save
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:auto_save = 1  " enable AutoSave on Vim startup
+let g:auto_save_silent = 1  " do not display the auto-save notification
