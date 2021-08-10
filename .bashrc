@@ -9,7 +9,7 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 XDG_CONFIG_HOME="$HOME/.config"
-PATH="XDG_CONFIG_HOME:/usr/local/sbin:/usr/local/bin:/usr/bin/:/opt/google/chrome:~/.npm-global/bin:~/Code/npm/hexo/node_modules/.bin:~/Code/npm/yarn/node_modules/.bin:$PATH"
+PATH="XDG_CONFIG_HOME:/usr/local/sbin:/usr/local/bin:/usr/bin/:/opt/google/chrome:~/.npm-global/bin:$PATH"
 
 source "$HOME/.vim/plugged/woohoo/woohoo_256palette.sh"
 
@@ -36,9 +36,6 @@ alias gitfetch='git fetch'
 alias gitmerge='git merge'
 alias gitclone='git clone'
 alias gitforce='git checkout --orphan temp && git add . && git commit -am "Initial commit" && git branch -D main && git branch -M main && git push -f origin main'
-
-# translate
-alias trans='translate -shell en:zh'
 
 # octave
 alias octave='octave --gui'
