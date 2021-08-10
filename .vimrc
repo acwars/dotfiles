@@ -11,12 +11,10 @@ endfunc
 call plug#begin('~/.vim/plugged')
 Plug 'VundleVim/Vundle.vim'
 Plug 'acwars/winmanager'
-Plug 'acwars/vim_snipmate'
 Plug 'acwars/woohoo'
 Plug 'acwars/vim_markdown_toc'
 Plug 'acwars/vim_completes'
 Plug 'acwars/vim_dictionary'
-Plug 'acwars/vim_auto_save'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/taglist.vim'
 Plug 'kien/ctrlp.vim'
@@ -463,8 +461,3 @@ set shortmess+=c
 " => vim_dictionary
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim_auto_save
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:auto_save = 1  " enable AutoSave on Vim startup
-let g:auto_save_silent = 1  " do not display the auto-save notification
